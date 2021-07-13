@@ -1,0 +1,395 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+}
+
+:root {
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #282121;
+  background-color: #eee;
+}
+
+.header {
+  background-color: #4d8bf4;
+  margin-bottom: 1em;
+}
+
+.header .header-container {
+  padding: 0.5em 1.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.header .icon {
+  font-size: 1.7rem;
+  margin-left: 0.5em;
+}
+
+.autocomplete-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.autocomplete-container .col {
+  margin: 1em;
+  margin-top: 0;
+}
+
+.autocomplete-container .autocomplete {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.autocomplete-container .title-movie-search {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.autocomplete-container .input {
+  width: 100%;
+}
+
+.autocomplete-container .dropdown-menu {
+  width: 100%;
+  margin-top: 0.1em;
+}
+
+.autocomplete-container .dropdown-menu .dropdown-item {
+  height: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  white-space: pre-wrap;
+  cursor: pointer;
+}
+
+.notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notification .ntf-container {
+  text-align: center;
+  padding: 1em 2em;
+  background-color: #4d8bf4;
+  border-radius: 0.3em;
+}
+
+.notification .ntf-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+
+.notification .ntf-subtitle {
+  font-size: 0.9rem;
+}
+
+.ntf-hidden {
+  display: none;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.card-text {
+  margin-bottom: 0.3em;
+  padding-bottom: 0.3em;
+  font-size: 1.1rem;
+  font-style: italic;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-text small {
+  font-size: 1rem;
+  font-style: normal;
+}
+
+.primary {
+  background-color: #999;
+}
+
+.more {
+  background-color: #4d8bf4;
+}
+
+.less {
+  background-color: #fe3a22;
+}
+
+.equal {
+  background-color: #f6b900;
+}
+
+.list-group-item {
+  margin-bottom: 0.1rem;
+  color: #fff;
+}
+
+.list-group-item .name {
+  font-size: 0.8rem;
+  margin-bottom: 0.3em;
+}
+
+.list-group-item .detail-st {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+}
+
+.tutorial {
+  width: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+figure.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+}
+
+figure .image img {
+  width: 128px;
+}
+
+.notification {
+  margin-top: 20px !important;
+}
+
+.results {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.title .icon {
+  margin-left: 15px;
+}
+
+.hero {
+  margin-bottom: 20px;
+}
+
+.forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+
+.dropdown-item img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .autocomplete-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .autocomplete-container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}

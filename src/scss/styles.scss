@@ -1,0 +1,206 @@
+@import "_reset";
+@import "_config";
+
+:root {
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #282121;
+  background-color: #eee;
+}
+
+///////////////////////////// HEADER
+.header {
+  background-color: #4d8bf4;
+  margin-bottom: 1em;
+
+  .header-container {
+    padding: 0.5em 1.8em;
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .icon {
+    font-size: 1.7rem;
+    margin-left: 0.5em;
+  }
+}
+///////////////////////////// HEADER
+
+///////////////////////////// MAIN
+.autocomplete-container {
+  display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 576px) {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .col {
+    margin: 1em;
+    margin-top: 0;
+  }
+  // AUTOCOMPLETE
+  .autocomplete {
+    flex: 1;
+    position: relative;
+    margin-bottom: 0.5em;
+  }
+  .title-movie-search {
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  .input {
+    width: 100%;
+  }
+  .dropdown-menu {
+    width: 100%;
+    margin-top: 0.1em;
+    .dropdown-item {
+      height: auto;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      white-space: pre-wrap;
+      cursor: pointer;
+    }
+  }
+}
+
+// NOTIFICATION BLOCK
+.notification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // color: #fff;
+  .ntf-container {
+    text-align: center;
+    padding: 1em 2em;
+    background-color: #4d8bf4;
+    border-radius: 0.3em;
+  }
+  .ntf-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.2em;
+  }
+  .ntf-subtitle {
+    font-size: 0.9rem;
+  }
+}
+.ntf-hidden {
+  display: none;
+}
+
+// SUMMARY
+// card-body
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.card-text {
+  margin-bottom: 0.3em;
+  padding-bottom: 0.3em;
+  font-size: 1.1rem;
+  font-style: italic;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  small {
+    font-size: 1rem;
+    font-style: normal;
+  }
+}
+
+// list-group
+.primary {
+  background-color: #999;
+}
+.more {
+  background-color: #4d8bf4;
+}
+.less {
+  background-color: #fe3a22;
+}
+.equal {
+  background-color: #f6b900;
+}
+.list-group-item {
+  margin-bottom: 0.1rem;
+  color: #fff;
+
+  .name {
+    font-size: 0.8rem;
+    margin-bottom: 0.3em;
+  }
+  .detail-st {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}
+.list-group-item:last-child {
+  margin-bottom: 0;
+}
+///////////////////////////// MAIN
+
+
+//
+.tutorial {
+  width: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+figure.image {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+figure .image img {
+  width: 128px;
+}
+
+.notification {
+  margin-top: 20px !important;
+}
+
+.results {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.title .icon {
+  margin-left: 15px;
+}
+
+.hero {
+  margin-bottom: 20px;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.dropdown-item img {
+  height: 50px;
+  margin-right: 10px;
+}
