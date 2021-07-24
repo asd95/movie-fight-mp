@@ -14,6 +14,13 @@ body {
   background-color: #eee;
 }
 
+.main {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
 ///////////////////////////// HEADER
 .header {
   background-color: #4d8bf4;
